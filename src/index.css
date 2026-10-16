@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased text-[#1A1A2E] bg-white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #6c63ff 0%, #48a9fe 100%);
+  }
+
+  .bg-accent-gradient {
+    background-image: linear-gradient(135deg, #6c63ff 0%, #48a9fe 100%);
+  }
+
+  .shadow-card {
+    box-shadow: 0 4px 24px rgba(26, 26, 46, 0.08);
+  }
+
+  .shadow-card-hover {
+    box-shadow: 0 12px 40px rgba(108, 99, 255, 0.18);
+  }
+}
